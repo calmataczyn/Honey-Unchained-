@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Honey Unchained</title>
+  <meta name="description" content="Honey Unchained — fair‑trade, tech‑enabled beekeeping in Kenya and India. Flow Hive training, traceable supply chains, premium honey for global markets." />
+  <style>
+    :root{
+      --bg:#0f1a17;          /* deep green/black */
+      --ink:#e7f6f1;         /* minty cream */
+      --accent:#ffd166;      /* warm honey */
+      --accent2:#3fb497;     /* Nairobi teal */
+      --muted:#93a39e;      /* soft gray-green */
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    .btn{display:inline-block;padding:14px 22px;border-radius:16px;background:var(--accent);color:#1a1a1a;font-weight:700;box-shadow:0 10px 24px rgba(255,209,102,.25);transition:transform .15s ease,box-shadow .15s ease}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 16px 32px rgba(255,209,102,.35)}
+    .btn-outline{background:transparent;border:2px solid var(--accent);color:var(--ink)}
+    header{position:sticky;top:0;background:rgba(15,26,23,.7);backdrop-filter:saturate(140%) blur(8px);z-index:50;border-bottom:1px solid rgba(255,255,255,.06)}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.5px}
+    .logo-mark{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#ffb703);box-shadow:inset 0 0 0 3px rgba(0,0,0,.2)}
+    .navlinks a{margin-left:18px;color:var(--ink);opacity:.86}
+    .navlinks a:hover{opacity:1;color:var(--accent)}
+
+    .hero{padding:88px 0 64px;background:radial-gradient(1200px 500px at 70% -10%,rgba(63,180,151,.18),transparent),radial-gradient(800px 400px at 20% 0,rgba(255,209,102,.18),transparent)}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
+    .eyebrow{color:var(--accent2);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:12px}
+    h1{font-size:44px;line-height:1.04;margin:12px 0 16px}
+    .lead{font-size:18px;color:var(--muted);max-width:48ch}
+    .cta{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.06);border-radius:20px;padding:22px}
+
+    .pill{display:inline-flex;align-items:center;gap:8px;border-radius:999px;border:1px solid rgba(255,255,255,.14);padding:8px 12px;color:var(--muted);font-size:13px}
+
+    section{padding:64px 0}
+    h2{font-size:30px;margin:0 0 10px}
+    p{color:#cfe6df}
+
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+
+    .kpi{display:flex;flex-direction:column;gap:8px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);padding:18px;border-radius:16px}
+    .kpi .num{font-size:28px;font-weight:900;color:var(--accent)}
+    .mini{font-size:12px;color:var(--muted)}
+
+    .badge{font-weight:800;color:#1a1a1a;background:var(--accent);border-radius:999px;padding:6px 10px;font-size:12px}
+
+    .split{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+
+    .panel{border:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.03));border-radius:18px;padding:20px}
+    ul{padding-left:18px}
+
+    .cta-band{background:linear-gradient(90deg,rgba(63,180,151,.25),rgba(255,209,102,.25));padding:32px;border:1px solid rgba(255,255,255,.08);border-radius:20px}
+
+    footer{padding:48px 0 80px;color:var(--muted)}
+    .footgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:24px}
+    .small{font-size:12px;color:var(--muted)}
+
+    @media (max-width: 900px){
+      .hero-grid,.grid-3,.grid-2,.split,.footgrid{grid-template-columns:1fr}
+      .hero{padding-top:64px}
+      h1{font-size:36px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo"><span class="logo-mark"></span> Honey Unchained</div>
+        <div class="navlinks">
+          <a href="#model">Model</a>
+          <a href="#economics">Economics</a>
+          <a href="#impact">Impact</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Fair‑trade • Tech‑enabled • Kenya → India</div>
+          <h1>Premium, traceable honey — unlocking farmer income and biodiversity.</h1>
+          <p class="lead">We equip smallholder beekeepers with modern Flow Hives, training, and a transparent supply chain. The result is higher yields, purer honey, and direct access to premium markets in the U.S. and India.</p>
+          <div class="cta">
+            <a class="btn" href="#contact">Partner with us</a>
+            <a class="btn btn-outline" href="#economics">See farmer math</a>
+          </div>
+          <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
+            <span class="pill">Flow Hive training</span>
+            <span class="pill">Fair‑trade & traceable</span>
+            <span class="pill">Afro‑urban brand</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="grid-3">
+            <div class="kpi"><div class="num">20 kg</div><div class="mini">Avg. harvest per cycle per hive</div></div>
+            <div class="kpi"><div class="num">4×</div><div class="mini">Minimum harvests per year</div></div>
+            <div class="kpi"><div class="num">800 KES/kg</div><div class="mini">Farmer price (raw honey)</div></div>
+          </div>
+          <div style="margin-top:14px" class="small">Numbers are conservative, based on field pilots in Kenya; expansion planned for India.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="model">
+      <div class="container split">
+        <div>
+          <h2>How the model works</h2>
+          <p>Honey Unchained is a full‑stack beekeeping program: we deploy modern hives, train farmers, guarantee offtake, and elevate product with premium Afro‑urban branding. Our fair‑trade, traceable supply chain moves raw nectar to global shelves — ethically.</p>
+          <div class="grid-2" style="margin-top:12px">
+            <div class="panel">
+              <strong>1) Modern hives</strong>
+              <p>Flow Hives increase yield, reduce bee disturbance, and improve purity — enabling more frequent, cleaner harvests.</p>
+            </div>
+            <div class="panel">
+              <strong>2) Training & co‑ops</strong>
+              <p>Hands‑on apiculture training and coop aggregation improve consistency, bargaining power, and logistics.</p>
+            </div>
+            <div class="panel">
+              <strong>3) Traceable supply</strong>
+              <p>Batch‑level traceability from hive → jar, aligned with fair‑trade standards and export compliance.</p>
+            </div>
+            <div class="panel">
+              <strong>4) Premium markets</strong>
+              <p>D2C in the U.S./India and B2B bulk exports. Design‑forward packaging built for conscious consumers.</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel">
+          <span class="badge">Kenya → India</span>
+          <h3 style="margin:10px 0 6px">Expansion plan</h3>
+          <ul>
+            <li><strong>Pilot scale (Kenya):</strong> onboard farmer cohorts, validate yield uplift, set QA baselines.</li>
+            <li><strong>India launch:</strong> replicate playbook with regional flora profiles and local processing partners.</li>
+            <li><strong>Portfolio:</strong> mono‑floral SKUs (acacia, eucalyptus, wildflower) + wax, propolis add‑ons.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="economics">
+      <div class="container">
+        <h2>Farmer economics (per hive)</h2>
+        <p class="small">Transparent math so outcomes are obvious.</p>
+        <div class="grid-3" style="margin-top:10px">
+          <div class="kpi"><div class="num">16,000 KES</div><div class="mini">= 20 kg × 800 KES/kg per harvest</div></div>
+          <div class="kpi"><div class="num">64,000 KES</div><div class="mini">= 4 harvests/year (minimum)</div></div>
+          <div class="kpi"><div class="num">≈ $492 USD</div><div class="mini">@ 130 KES per USD (illustrative)</div></div>
+        </div>
+        <div class="panel" style="margin-top:16px">
+          <strong>Scale effects:</strong>
+          <ul>
+            <li>With 5 hives, a farmer can add ≈ <strong>$2,460 USD/year</strong> in diversified income.</li>
+            <li>Co‑op aggregation improves pricing and reduces transport + processing costs.</li>
+            <li>Quality upgrades (moisture, pollen profile) unlock premium pricing tiers.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="impact">
+      <div class="container split">
+        <div>
+          <h2>Impact</h2>
+          <ul>
+            <li><strong>Income uplift:</strong> 3–5× vs. traditional methods through yield + market access.</li>
+            <li><strong>Environment:</strong> Pollinator health, biodiversity corridors, climate‑resilient livelihoods.</li>
+            <li><strong>Traceability:</strong> Farmer‑level transparency builds buyer trust and export readiness.</li>
+          </ul>
+        </div>
+        <div class="cta-band">
+          <h3 style="margin-top:0">Let’s build equitable supply chains.</h3>
+          <p>We’re seeking retail partners, ethical buyers, and mission‑aligned investors for Kenya and India.</p>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container grid-2">
+        <div>
+          <h2>Contact</h2>
+          <p>Interested in partnering, retailing, or investing? Drop us a line.</p>
+          <p style="margin-top:10px"><strong>Email:</strong> <a href="mailto:hello@honeyunchained.com">hello@honeyunchained.com</a> <span class="small">(placeholder — update to your preferred address)</span></p>
+          <p><strong>Locations:</strong> Nairobi, Kenya • Visakhapatnam, India • San Francisco, USA</p>
+        </div>
+        <form class="panel" onsubmit="event.preventDefault(); alert('Thanks! We\'ll get back to you within 48 hours.');">
+          <label class="small">Name</label>
+          <input required placeholder="Your name" style="width:100%;padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:var(--ink);margin:6px 0 12px" />
+          <label class="small">Email</label>
+          <input required type="email" placeholder="you@example.com" style="width:100%;padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:var(--ink);margin:6px 0 12px" />
+          <label class="small">Message</label>
+          <textarea placeholder="Tell us a bit about your interest" rows="4" style="width:100%;padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:var(--ink);margin:6px 0 12px"></textarea>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footgrid">
+      <div>
+        <div class="logo" style="margin-bottom:8px"><span class="logo-mark"></span> Honey Unchained</div>
+        <div class="small">© <span id="y"></span> Honey Unchained. Built with love in Kenya & India.</div>
+      </div>
+      <div>
+        <div class="small">Fair‑trade • Traceable • Afro‑urban</div>
+      </div>
+      <div style="text-align:right">
+        <a class="small" href="#">Privacy</a>
+      </div>
+    </div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+  </footer>
+</body>
+</html>
